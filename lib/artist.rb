@@ -19,7 +19,7 @@ class Artist
   def self.find_or_create_by_name(name)
     inside_all = @@all.include?(name)
     if inside_all
-      @@all.reduce do |artist|
+      @@all.find do |artist|
         return artist if artist.name == name 
       end 
     else 
