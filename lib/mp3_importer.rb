@@ -3,6 +3,6 @@ class MP3Importer
   @@all = []
   def initialize(file_path)
     @file_path = file_path
-    @@all << 
+    @@all << self 
   end 
 end 
